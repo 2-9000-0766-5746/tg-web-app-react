@@ -12,6 +12,7 @@
             tg.close();
         };
 
+
         return (
             <div className="App">
                 <button onClick={onClose}>Закрыть</button>
