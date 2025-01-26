@@ -4,6 +4,15 @@ body {
     font-family: 'Roboto', sans-serif; /* Или другой чистый шрифт */
     line-height: 1.6;
 }
+.main-title {
+    text-align: center; /* Выравнивание по центру */
+    font-size: 2.2em; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-transform: uppercase; /* Заглавные буквы */
+    margin-bottom: 30px; /* Отступ снизу */
+    color: #fff; /* Белый цвет заголовка */
+    letter-spacing: 1px; /* Небольшой интервал между буквами */
+}
 
 .course-list {
     display: grid;

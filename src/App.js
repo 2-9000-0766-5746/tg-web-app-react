@@ -15,6 +15,10 @@
         return (
             <div className="App">
                 <button onClick={onClose}>Закрыть</button>
+                {/* Добавлен заголовок */}
+                <h1 className="main-title">Сборник курсов по стилизации одежды от Vestiary</h1>
+
+
                 <div className="course-list">
                     <div className="course-card">
                         <strong>Дизайнер одежды | Skillbox</strong>
