@@ -1,37 +1,68 @@
+body {
+    background-color: #333; /* Темно-серый фон */
+    color: #eee; /* Светло-серый текст */
+    font-family: 'Roboto', sans-serif; /* Или другой чистый шрифт */
+    line-height: 1.6;
+}
+
 .course-list {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.7;
-    color: #444;
-}
-
-.course-item {
-    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Адаптивная сетка */
+    grid-gap: 20px;
     padding: 20px;
-    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #444; /* Slightly lighter dark gray for cards */
+    border: 1px solid #555;
     border-radius: 10px;
-    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
 }
 
-.course-item:hover {
-    background-color: #f0f0f0; /* Цвет при наведении */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
 }
 
-.course-item h3 {
+.course-card h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.4em;
+    color: #eee; /* Light gray for headings */
 }
 
-.course-item p {
+.course-card p {
     margin-bottom: 5px;
-    font-size: 1em;
-    color: #555;
+    color: #ccc; /* Medium gray for paragraphs */
 }
 
-.course-item strong {
+.course-card strong {
     font-weight: bold;
 }
+
+.free-courses-list,
+.youtube-channels-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #aaa; /* Slightly darker gray for lists */
+}
+
+.free-courses-list li,
+.youtube-channels-list li {
+    margin-bottom: 5px;
+}
+
+
+/*  Responsiveness (optional) - Adjust breakpoints as needed */
+@media (max-width: 768px) {
+    .course-list {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
 body {
     blackground: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
