@@ -31,7 +31,13 @@ function App() {
                     <p>Документ после окончания обучения: сертификат.</p>
                 </div>
                 <div className="course-card">
-                    <h3>Профессия fashion-дизайнер одежды от Talentsy</h3>
+                    <h3>
+                        <a href="https://talentsy.ru/professiya-fashion-dizayner/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=kpvcom&advcake_params=f374ea2a36732791e1a8a92cdbeb562a&utm_term=f374ea2a36732791e1a8a92cdbeb562a&erid=LdtCKEyiP&advcake_method=2&m=2"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Профессия fashion-дизайнер одежды от Talentsy
+                        </a>
+                    </h3>
                     <p>Для кого: курс для всех желающих.</p>
                     <p>Длительность и количество уроков: 12 месяцев, 350+ занятий.</p>
                     <p>Стоимость: от 7 500 ₽/мес., первый платеж через 2 месяца.</p>
@@ -39,7 +45,13 @@ function App() {
                     <p>Документ об окончании: диплом о профпереподготовке, международный диплом и сертификат.</p>
                 </div>
                 <div className="course-card">
-                    <h3>Дизайн и моделирование одежды от НИИДПО</h3>
+                    <h3>
+                        <a href="https://niidpo.ru/seminar/dizajn-i-modelirovanie-odezhdy?utm_source=advcake&utm_medium=cpa&utm_campaign=referral&utm_content=kpvcom&advcake_params=90069270f7424e71c2e11995c519822c&utm_term=90069270f7424e71c2e11995c519822c&erid=LdtCKdVD1&advcake_method=4&m=4"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Дизайн и моделирование одежды от НИИДПО
+                        </a>
+                    </h3>
                     <p>Целевая аудитория: новички, действующие специалисты.</p>
                     <p>Длительность: 12 месяцев, возможно ускоренное дистанционное обучение — 8 мес.</p>
                     <p>Цена: от 5 120 ₽/мес. или 61 400 ₽.</p>
@@ -47,7 +59,13 @@ function App() {
                     <p>Документ по окончании курса: диплом о профессиональной переподготовке, сертификат компетенций.</p>
                 </div>
                 <div className="course-card">
-                    <h3>Профессиональный курс Дизайнер одежды | Pentaschool</h3>
+                    <h3>
+                        <a href="https://pentaschool.ru/program/dizajn-modelirovanie-odezhdy-kurs?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=kpvcom&advcake_params=1d29dac487fd6ab66550dffd0eff892e&utm_term=1d29dac487fd6ab66550dffd0eff892e&erid=LdtCKSW7C&advcake_method=1&m=1"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Профессиональный курс Дизайнер одежды | Pentaschool
+                        </a>
+                    </h3>
                     <p>Для кого: курс подойдёт для тех, кто хочет создать свой бренд с нуля или повысить квалификацию.</p>
                     <p>Продолжительность: 10 месяцев.</p>
                     <p>Стоимость: от 5 117 ₽/мес. без первого взноса.</p>
