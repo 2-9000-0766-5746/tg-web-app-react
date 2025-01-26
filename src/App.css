@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', sans-serif; /* Или другой чистый шрифт */
     line-height: 1.6;
 }
+
+/* Стили для заголовка */
 .main-title {
     text-align: center; /* Выравнивание по центру */
     font-size: 2.2em; /* Увеличенный размер шрифта */
@@ -16,40 +18,35 @@ body {
 
 .course-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Адаптивная сетка */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
     padding: 20px;
 }
 
-
 .course-card {
-    background-color: #444; /* Slightly lighter dark gray for cards */
+    background-color: #444;
     border: 1px solid #555;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .course-card:hover {
     transform: translateY(-5px);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 .course-card h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.4em;
-    color: #eee; /* Light gray for headings */
+    color: #eee;
 }
 
 .course-card p {
     margin-bottom: 5px;
-    color: #ccc; /* Medium gray for paragraphs */
-}
-
-.course-card strong {
-    font-weight: bold;
+    color: #ccc;
 }
 
 .free-courses-list,
@@ -57,7 +54,7 @@ body {
     list-style-type: disc;
     margin-left: 20px;
     margin-top: 10px;
-    color: #aaa; /* Slightly darker gray for lists */
+    color: #aaa;
 }
 
 .free-courses-list li,
@@ -65,14 +62,24 @@ body {
     margin-bottom: 5px;
 }
 
+/* Стили для ссылок */
+.course-card h3 a {
+    color: #fff; /* Белый цвет для ссылок */
+    text-decoration: none; /* Убрать подчеркивание */
+    transition: color 0.2s ease;
+}
+
+.course-card h3 a:hover {
+    color: #007bff; /* Синий цвет при наведении */
+    text-decoration: underline;
+}
 
 /*  Responsiveness (optional) - Adjust breakpoints as needed */
 @media (max-width: 768px) {
     .course-list {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
-
 body {
     blackground: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
