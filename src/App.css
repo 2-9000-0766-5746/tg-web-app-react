@@ -1,52 +1,65 @@
 body {
-    background-color: #de95ba; /* Бордовый фон */
-    color: #333;
+    background-color: #4a266a;
+    color: #ffd9e8;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    margin: 0; /* Убираем отступы по умолчанию */
+    display: flex;
+    flex-direction: column; /* Размещение элементов сверху вниз */
+    min-height: 100vh; /* Занимаем всю высоту экрана */
 }
 
-/* Стили для заголовка */
 .main-title {
     text-align: center;
     font-size: 2.2em;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #f5f5dc; /* Бежевый цвет заголовка */
-    letter-spacing: 1px;
+    margin: 20px 0; /* Отступы сверху и снизу */
+    color: #ffd9e8;
+}
+
+
+.course-container {
+    display: flex; /* Используем flexbox для размещения элементов в ряд */
+    justify-content: space-around; /* Распределяем элементы с отступами */
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку для адаптивности */
+    padding: 20px;
+    flex-grow:1; /*Разрешаем растягиваться*/
+    box-sizing: border-box;
 }
 
 .course-list {
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
-    padding: 20px;
 }
 
 .course-card {
-    background-color: #7f4a88; /* Бежевый цвет карточек */
-    border: 1px solid #d2b48c; /* Более темная бежевая граница */
+    background-color: #7f4a88;
+    border: 1px solid #de95ba;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+    min-height:250px; /*Минимальная высота, чтобы не "схлопывались"*/
 }
 
 .course-card:hover {
     transform: translateY(-5px);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .course-card h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.4em;
-    color: #ffd9e8; /* Бордовый цвет для заголовков */
+    color: #ffd9e8;
 }
 
 .course-card p {
     margin-bottom: 5px;
-    color: #555;
+    color: #de95ba;
 }
 
 .free-courses-list,
@@ -54,7 +67,7 @@ body {
     list-style-type: disc;
     margin-left: 20px;
     margin-top: 10px;
-    color: #555;
+    color: #de95ba;
 }
 
 .free-courses-list li,
@@ -62,41 +75,47 @@ body {
     margin-bottom: 5px;
 }
 
-
 .course-card h3 a {
-    color: #4a266a; /* Бордовый цвет для ссылок */
+    color: #ffd9e8;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .course-card h3 a:hover {
-    color: #000000;
+    color: #fff;
     text-decoration: underline;
 }
 
-
-/* Стилизация контейнера для изображений */
 .image-container {
-    display: flex; /* Использование flexbox для размещения картинок в ряд */
-    justify-content: center; /* Центрирование картинок по горизонтали */
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* картинки друг под другом */
+    align-items: center; /* выравнивание по центру */
+    margin-left: 20px; /* отступ от карточек */
 }
 
-/* Стилизация изображения по центру */
-.centered-image {
-    display: block;
-    margin: 0 auto; /* Центрирование по горизонтали */
-    max-width: 480px; /* Максимальная ширина изображений */
-    height: auto; /* Автоматическая высота */
+
+.image-container img {
+    max-width: 300px; /* Увеличили максимальную ширину */
+    height: auto;
+    margin-bottom: 20px; /* Отступ между картинками */
 }
 
-/* Responsiveness (optional) */
+
 @media (max-width: 768px) {
-    .course-list {
-        grid-template-columns: 1fr;
+    .course-container {
+        flex-direction: column; /* на мобильных - картинки под карточками */
     }
 
-    .centered-image {
-        max-width: 480px;
+    .image-container {
+        margin-left: 0; /* отступ убирается на мобильных */
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 200px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
     }
 }
