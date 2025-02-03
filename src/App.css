@@ -1,5 +1,5 @@
 body {
-    background-color: #800000; /* Бордовый фон */
+    background-color: #de95ba; /* Бордовый фон */
     color: #333;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -24,7 +24,7 @@ body {
 }
 
 .course-card {
-    background-color: #f5f5dc; /* Бежевый цвет карточек */
+    background-color: #7f4a88; /* Бежевый цвет карточек */
     border: 1px solid #d2b48c; /* Более темная бежевая граница */
     border-radius: 10px;
     padding: 20px;
@@ -41,7 +41,7 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.4em;
-    color: #800000; /* Бордовый цвет для заголовков */
+    color: #ffd9e8; /* Бордовый цвет для заголовков */
 }
 
 .course-card p {
@@ -64,7 +64,7 @@ body {
 
 
 .course-card h3 a {
-    color: #800000; /* Бордовый цвет для ссылок */
+    color: #4a266a; /* Бордовый цвет для ссылок */
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -86,7 +86,7 @@ body {
 .centered-image {
     display: block;
     margin: 0 auto; /* Центрирование по горизонтали */
-    max-width: 250px; /* Максимальная ширина изображений */
+    max-width: 480px; /* Максимальная ширина изображений */
     height: auto; /* Автоматическая высота */
 }
 
@@ -97,6 +97,6 @@ body {
     }
 
     .centered-image {
-        max-width: 150px;
+        max-width: 480px;
     }
 }
