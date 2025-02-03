@@ -32,6 +32,10 @@ function App() {
                     <p>Формат обучения: онлайн: видеоролики, практические задания, помощь и обратная связь от кураторов.</p>
                     <p>Документ после окончания обучения: сертификат.</p>
                 </div>
+                <div className="image-container">
+
+                    <img src={image2} alt="Второе изображение" />
+                </div>
                 <div className="course-card">
                     <h3>
                         <a href="https://talentsy.ru/professiya-fashion-dizayner/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=kpvcom&advcake_params=f374ea2a36732791e1a8a92cdbeb562a&utm_term=f374ea2a36732791e1a8a92cdbeb562a&erid=LdtCKEyiP&advcake_method=2&m=2"
@@ -98,7 +102,7 @@ function App() {
             </div>
             <div className="image-container">
                 <img src={image1} alt="Первое изображение" />
-                <img src={image2} alt="Второе изображение" />
+
             </div>
         </div>
     );
