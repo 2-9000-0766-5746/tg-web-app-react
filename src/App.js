@@ -31,10 +31,9 @@ function App() {
                     <p>Стоимость: 12 × 8 637 ₽/мес.</p>
                     <p>Формат обучения: онлайн: видеоролики, практические задания, помощь и обратная связь от кураторов.</p>
                     <p>Документ после окончания обучения: сертификат.</p>
-                </div>
-                <div className="image-container">
-
-                    <img src={image2} alt="Второе изображение" />
+                    <div className="image-container">
+                        <img src={image1} alt="Первое изображение" className="centered-image"/>
+                    </div>
                 </div>
                 <div className="course-card">
                     <h3>
@@ -63,6 +62,9 @@ function App() {
                     <p>Цена: от 5 120 ₽/мес. или 61 400 ₽.</p>
                     <p>Формат: видеолекции, лонгриды, ежемесячные прямые эфиры, практика с проверкой, тестирование.</p>
                     <p>Документ по окончании курса: диплом о профессиональной переподготовке, сертификат компетенций.</p>
+                    <div className="image-container">
+                        <img src={image2} alt="Второе изображение" className="centered-image"/>
+                    </div>
                 </div>
                 <div className="course-card">
                     <h3>
@@ -99,10 +101,6 @@ function App() {
                         <li>Модные практики – серия уроков по конструированию.</li>
                     </ul>
                 </div>
-            </div>
-            <div className="image-container">
-                <img src={image1} alt="Первое изображение" />
-
             </div>
         </div>
     );

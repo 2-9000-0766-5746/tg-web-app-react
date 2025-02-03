@@ -1,5 +1,5 @@
 body {
-    background-color: #e0f7fa; /* Голубой фон */
+    background-color: #800000; /* Бордовый фон */
     color: #333;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -12,7 +12,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: #0056b3;
+    color: #f5f5dc; /* Бежевый цвет заголовка */
     letter-spacing: 1px;
 }
 
@@ -24,11 +24,11 @@ body {
 }
 
 .course-card {
-    background-color: #f0f8ff; /* Молочно-голубой цвет карточек */
-    border: 1px solid #b0e0e6; /* Более светлая граница */
+    background-color: #f5f5dc; /* Бежевый цвет карточек */
+    border: 1px solid #d2b48c; /* Более темная бежевая граница */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Менее темная тень */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -41,14 +41,13 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.4em;
-    color: #0056b3; /* Темно-синий цвет для заголовков */
+    color: #800000; /* Бордовый цвет для заголовков */
 }
 
 .course-card p {
     margin-bottom: 5px;
     color: #555;
 }
-
 
 .free-courses-list,
 .youtube-channels-list {
@@ -63,28 +62,32 @@ body {
     margin-bottom: 5px;
 }
 
+
 .course-card h3 a {
-    color: #0056b3; /* Темно-синий цвет для ссылок */
+    color: #800000; /* Бордовый цвет для ссылок */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .course-card h3 a:hover {
-    color: #000080; /* темно-синий цвет при наведении */
+    color: #000000;
     text-decoration: underline;
 }
+
 
 /* Стилизация контейнера для изображений */
 .image-container {
     display: flex; /* Использование flexbox для размещения картинок в ряд */
     justify-content: center; /* Центрирование картинок по горизонтали */
-    margin-top: 20px; /* Отступ сверху */
+    margin-top: 20px;
 }
 
-.image-container img {
-    max-width: 200px;
-    height: auto;
-    margin: 0 10px;
+/* Стилизация изображения по центру */
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    max-width: 250px; /* Максимальная ширина изображений */
+    height: auto; /* Автоматическая высота */
 }
 
 /* Responsiveness (optional) */
@@ -92,7 +95,8 @@ body {
     .course-list {
         grid-template-columns: 1fr;
     }
-    .image-container img {
+
+    .centered-image {
         max-width: 150px;
     }
 }
