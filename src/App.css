@@ -1,19 +1,19 @@
 body {
-    background-color: #333; /* Темно-серый фон */
-    color: #eee; /* Светло-серый текст */
-    font-family: 'Roboto', sans-serif; /* Или другой чистый шрифт */
+    background-color: #e0f7fa; /* Голубой фон */
+    color: #333;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
 /* Стили для заголовка */
 .main-title {
-    text-align: center; /* Выравнивание по центру */
-    font-size: 2.2em; /* Увеличенный размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    text-transform: uppercase; /* Заглавные буквы */
-    margin-bottom: 30px; /* Отступ снизу */
-    color: #fff; /* Белый цвет заголовка */
-    letter-spacing: 1px; /* Небольшой интервал между буквами */
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #0056b3;
+    letter-spacing: 1px;
 }
 
 .course-list {
@@ -24,37 +24,38 @@ body {
 }
 
 .course-card {
-    background-color: #444;
-    border: 1px solid #555;
+    background-color: #f0f8ff; /* Молочно-голубой цвет карточек */
+    border: 1px solid #b0e0e6; /* Более светлая граница */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Менее темная тень */
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .course-card:hover {
     transform: translateY(-5px);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .course-card h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.4em;
-    color: #eee;
+    color: #0056b3; /* Темно-синий цвет для заголовков */
 }
 
 .course-card p {
     margin-bottom: 5px;
-    color: #ccc;
+    color: #555;
 }
+
 
 .free-courses-list,
 .youtube-channels-list {
     list-style-type: disc;
     margin-left: 20px;
     margin-top: 10px;
-    color: #aaa;
+    color: #555;
 }
 
 .free-courses-list li,
@@ -62,25 +63,36 @@ body {
     margin-bottom: 5px;
 }
 
-/* Стили для ссылок */
 .course-card h3 a {
-    color: #fff; /* Белый цвет для ссылок */
-    text-decoration: none; /* Убрать подчеркивание */
+    color: #0056b3; /* Темно-синий цвет для ссылок */
+    text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .course-card h3 a:hover {
-    color: #007bff; /* Синий цвет при наведении */
+    color: #000080; /* темно-синий цвет при наведении */
     text-decoration: underline;
 }
 
-/*  Responsiveness (optional) - Adjust breakpoints as needed */
+/* Стилизация контейнера для изображений */
+.image-container {
+    display: flex; /* Использование flexbox для размещения картинок в ряд */
+    justify-content: center; /* Центрирование картинок по горизонтали */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* Responsiveness (optional) */
 @media (max-width: 768px) {
     .course-list {
         grid-template-columns: 1fr;
     }
-}
-body {
-    blackground: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+    .image-container img {
+        max-width: 150px;
+    }
 }

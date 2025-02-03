@@ -1,5 +1,7 @@
 import './App.css';
 import { useEffect } from "react";
+import image1 from './img/image1.jpg'; // Импорт первой картинки
+import image2 from './img/image2.jpg'; // Импорт второй картинки
 const tg = window.Telegram.WebApp;
 
 function App() {
@@ -93,6 +95,10 @@ function App() {
                         <li>Модные практики – серия уроков по конструированию.</li>
                     </ul>
                 </div>
+            </div>
+            <div className="image-container">
+                <img src={image1} alt="Первое изображение" />
+                <img src={image2} alt="Второе изображение" />
             </div>
         </div>
     );
